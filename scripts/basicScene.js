@@ -4,7 +4,6 @@ let scene, camera, renderer;
 
 
 function makeAScene(){
-    console.log("bork");
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1,1000);
 
