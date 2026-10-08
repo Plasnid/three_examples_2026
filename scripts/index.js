@@ -1,11 +1,19 @@
-//import './style.css';
+import * as Tone from 'tone';
+
+const synth = new Tone.Synth().toDestination();
+
+// tone embedded into document as well
+let tonePage = document.querySelector("body");
+tonePage.addEventListener('click', async () => {
+    await Tone.start();
+    synth.triggerAttackRelease('C4', '8n');
+});
 
 //making basic shapes
-
+/**
 import { makeAScene } from "/scripts/basicScene.js";
 makeAScene();
-
-
+ */
 
 //materials
 /**
